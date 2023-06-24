@@ -1,0 +1,153 @@
+{% extends 'html/base.html' %}
+{% load static %}
+
+
+
+
+
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<!-- <div class="container mt-5">
+   <div class="jumbotron ml-auto">
+     <h3>Welcome to Homepage</h3>
+   </div>
+</div> -->
+<div class="col-md-12 py-5 px-3" style="background-color: #ffd311;">
+
+  <div class="row">
+    <div class="col-md-6 text-center">
+<img src="{% static '/images/man1.png' %}" class="rounded-circle" style="border-radius: 40% " height="300px" width="300px" >
+      
+    </div>
+    <div class="col-md-6  mt-5">
+      <h1 style="font-weight: bold;">Looking to share your</h1>
+      <!-- <h1 style="font-weight: bold;"></h1> -->
+      <h1 style="font-weight: bold;">daily work status</h1>
+      <h1 >Join <span style="background: linear-gradient(45deg, pink, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        font-size: 46px;
+        ">WorkLog</span>Today!</h1>
+
+        <a href="{% url 'reg' %}" class="btn btn-info btn-lg mt-3 px-2 text-center">Get Started</a>
+    </div>
+    
+  </div>
+
+  <div class="row m-5" >
+    <div class="col-md-4">
+      <h2>Welcome to Worklog</h2>
+      <p style="text-align: justify;">Streamline your daily work submissions with ease.
+
+Worklog is a user-friendly platform designed to simplify the process of submitting your daily work.Worklog provides a seamless solution for efficient work tracking and submission.</p>
+    </div>
+    <div class="col-md-4 ">
+      <h2>Features:</h2>
+      <h6>1) Work status submission:</h6>
+      <p style="text-align: justify;">Easily submit your workstats on a daily basis, keeping track of your completed tasks. Provide detailed descriptions to showcase your work.</p>
+      <h6>2) Dashboard</h6>
+      <p style="text-align: justify;">Track the number of completed and pending tasks at a glance with the intuitive dashboard.</p>
+      <h6>3) Profile Updation:</h6>
+      <p style="text-align: justify;">Update and maintain your profile with ease. Customize your personal information, including your profile picture.Keep your information up to date.</p>
+      <!-- <h6>4) Workstatus Viewing:</h6>
+      <p style="text-align: justify;">Effortlessly view the status of your submitted work. Access a centralized repository of all your workstats, including completed tasks, pending assignments, and deadlines. Stay organized and stay on top of your responsibilities.</p> -->
+    </div>
+    <div class="col-md-4">
+      <h2>How it works:</h2>
+      <p style="text-align: justify;">
+        <h6>1) Sign up for an account:</h6> Create your Worklofg account in a few simple steps and set up your profile.
+      </p>
+      <p>
+        <h6>2) Customize your profile:</h6> Personalize your profile by adding your profile.
+      </p>
+      <p style="text-align: justify;">
+        <h6>
+          3) Submit your work: 
+        </h6>
+        Use the intuitive interface to submit your work daily, including descriptions,and relevant notes.
+      </p>
+      <p>
+        <h6>
+          4) Track Progress:
+        </h6>
+        Monitor your work history, track your completed and not completed tasks
+      </p>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer style="background-color: black;" class="m-0" style="overflow: hidden;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        
+      </div>
+      <div class="col-md-6 ">
+        <h1 class="text-center m-4 text-white ">Follow us on</h1>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4 text-center">
+        <img class=" mb-5" style="border-radius: 50%" src="{% static '/images/logo_image.png' %}" height="200px" width="200px">
+      </div>
+      
+      
+
+      
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">LinkedIn</h3> -->
+        <h3 class="text-center" ><a target="_blank" href="https://www.linkedin.com/in/veeravarapunivas"><i style="color: #FFFFFF;" class="fa-brands fa-linkedin fa-lg fa-fade" ></i></a></h3>
+        <div class="icon-with-text mt-5 text-center">
+  <i class="fa-solid fa-phone fa-fade fa-2xl ml-5"></i>
+  <h5 class="ml-2">7207495740</h5>
+</div>
+      </div>
+
+<div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Instagram</h3> -->
+        <h3 class="text-center"><a href="https://instagram.com/nivas.veeravarapu?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i style="color: #FFFFFF;" class="fa-brands fa-instagram fa-lg fa-fade" style="color: #51411f;"></i></a></h3>
+      </div>
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Twitter</h3> -->
+        <h3 class="text-center"><a target="_blank" href="https://twitter.com/68Nivas87010?t=5DAiDO6S574uVgkAQon9iA&s=09"><i style="color: #FFFFFF;" class="fa-brands fa-twitter fa-lg fa-fade" style="color: #0c59df;"></i></a></h3>
+
+
+<div class="icon-with-text mt-4 text-center">
+  <i class="fa-solid fa-envelope fa-fade fa-2xl "></i>
+  <h5 class="m-3 pb-2">nivasv2331@gmail.com</h5>
+</div>
+
+
+      </div>
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Facebook</h3> -->
+        <h3 class="text-center"><a target="_blank" href="https://www.facebook.com/nivas.veeravarapu.5"><i  style="color: #FFFFFF;" class="fa-brands fa-facebook fa-lg fa-fade"></i></a></h3>
+      </div>
+    </div>
+  </div>
+  <hr style="background-color: white;">
+
+
+  <div class="mb-3 p-2 text-center">
+    <p class="paragraph-5 text-white " style="text-align: center">Copyright © 2023 | WorkLog | All Rights Reserved</p>
+  </div>
+</footer>
+<link rel="stylesheet" type="text/css" href="{% static '/css/footer.css' %}">
+<link rel="stylesheet" href="{% static '/css/mobile.css' %}">
+{% endblock %}
+
+
+
+

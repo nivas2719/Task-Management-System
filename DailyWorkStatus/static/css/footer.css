@@ -1,0 +1,9 @@
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.icon-with-text i {
+  margin-right: 5px;
+}

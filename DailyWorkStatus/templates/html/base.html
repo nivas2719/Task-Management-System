@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %} {% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- bootstrap 4 is used -->
+ <link rel="icon" type="text/css" href="{% static '/images/logo_image.png' %}">
+  <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/mobile.css' %}">
+  <script src="{% static '/jquery/demo.js' %}"></script>
+  <script src="{% static '/js/bootstrap.min.js' %}"></script>
+  <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/94ca4bcef9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  {% include 'html/navbar.html' %}
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

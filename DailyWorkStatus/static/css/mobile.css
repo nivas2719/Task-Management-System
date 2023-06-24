@@ -1,0 +1,17 @@
+/* Existing CSS code */
+
+@media only screen and (max-width: 768px) {
+  /* Add your mobile-specific styles here */
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+}

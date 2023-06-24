@@ -1,0 +1,142 @@
+{% extends "html/base.html" %}
+{% load static %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+	{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}	
+	</div>
+	{% endfor %}
+	{% endif %}
+	<div class="row mt-4">
+		<div class=" card col-md-3 col-sm-3 mx-2 my-2">
+
+			<h2 class="bg-info text-center mx-2 my-2 p-2 border rounded">Profile</h2>
+
+			<div class="card-body">
+				<img class="rounded" height="250px" width="100%" src="{{user.exfd.impf.url}}"   />
+				
+			</div>
+		</div>
+		<div class=" card col-md col-sm mx-2 my-2">
+
+			<h2 class="bg-secondary text-center mx-2 my-2 p-2 border rounded text-white"> Details</h2>
+			<div class="card-body">
+				<table class="table table-borderless">
+					<tr>
+						<th>First Name</th>
+						<td>{{user.first_name}}</td>
+					</tr>
+					<tr>
+						<th>
+							Last Name
+						</th>
+						<td>{{user.last_name}}</td>
+					</tr>
+					<tr>
+						<th>
+							User Name
+						</th>
+						<td>{{user.username}}</td>
+					</tr>
+					<tr>
+						<th>
+							Email
+						</th>
+						<td>{{user.email}}</td>
+					</tr>
+					<tr>
+						<th>
+							Age
+						</th>
+						<td>{{user.exfd.age}}</td>
+					</tr>
+					<tr>
+						<th>
+							Gender
+						</th>
+						<td>{{user.exfd.gender}}</td>
+					</tr>
+				</table>
+				<a href="{% url 'upfe' %}" class="btn btn-block btn-success">Update</a>
+				
+			</div>
+		</div>
+	</div>
+	  
+</div>
+
+
+<footer style="background-color: black;" class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        
+      </div>
+      <div class="col-md-6 ">
+        <h1 class="text-center m-4 text-white ">Follow us on</h1>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <img class="rounded-circle mb-5 text-center" src="{% static '/images/logo_image.png' %}" height="200px" width="200px">
+      </div>
+      
+      
+
+      
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">LinkedIn</h3> -->
+        <h3 class="text-center" ><a target="_blank" href="https://www.linkedin.com/in/veeravarapunivas"><i style="color: #FFFFFF;" class="fa-brands fa-linkedin fa-lg fa-fade" ></i></a></h3>
+        <div class="icon-with-text mt-5 text-center">
+  <i class="fa-solid fa-phone fa-fade fa-2xl ml-5"></i>
+  <h5 class="ml-2">7207495740</h5>
+</div>
+      </div>
+
+<div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Instagram</h3> -->
+        <h3 class="text-center"><a href="https://instagram.com/nivas.veeravarapu?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i style="color: #FFFFFF;" class="fa-brands fa-instagram fa-lg fa-fade" style="color: #51411f;"></i></a></h3>
+      </div>
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Twitter</h3> -->
+        <h3 class="text-center"><a target="_blank" href="https://twitter.com/68Nivas87010?t=5DAiDO6S574uVgkAQon9iA&s=09/"><i style="color: #FFFFFF;" class="fa-brands fa-twitter fa-lg fa-fade" style="color: #0c59df;"></i></a></h3>
+<!-- <div class="text-center mt-5">
+  <p class="text-white"><i class="fa-solid fa-envelope fa-fade fa-2xl" style="color: #ffffff;"></i>nivasv2331@gmail.com</p>
+  
+</div> -->
+
+<div class="icon-with-text mt-4 text-center">
+  <i class="fa-solid fa-envelope fa-fade fa-2xl "></i>
+  <h5 class="m-3 pb-2">nivasv2331@gmail.com</h5>
+</div>
+
+
+      </div>
+
+      <div class="col-md-2 mt-4">
+        <!-- <h3 class="mb-4 text-center text-white">Facebook</h3> -->
+        <h3 class="text-center"><a target="_blank" href="https://www.facebook.com/nivas.veeravarapu.5"><i  style="color: #FFFFFF;" class="fa-brands fa-facebook fa-lg fa-fade"></i></a></h3>
+      </div>
+    </div>
+  </div>
+  <hr style="background-color: white;">
+
+
+  <div class="mb-3 p-2 text-center">
+    <p class="paragraph-5 text-white " style="text-align: center">Copyright © 2023 | WorkLog | All Rights Reserved</p>
+  </div>
+</footer>
+<link rel="stylesheet" type="text/css" href="{% static '/css/footer.css' %}">
+
+<link rel="stylesheet" href="{% static '/css/mobile.css' %}">
+{% endblock %}
